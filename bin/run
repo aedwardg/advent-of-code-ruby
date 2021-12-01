@@ -5,5 +5,5 @@ day = ARGV[1]
 
 require "./#{year}/#{day}.rb"
 
-puts part_one(day)
-puts part_two(day)
+puts part_one(year, day)
+puts part_two(year, day)

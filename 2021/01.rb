@@ -2,8 +2,8 @@ require_relative '../utils/reader'
 
 include AOC
 
-def part_one(day)
-  data = Reader.readlines(day).map(&:to_i)
+def part_one(year, day)
+  data = Reader.readlines(year, day).map(&:to_i)
   increases = 0
 
   data.each_with_index do |element, i|
@@ -12,8 +12,8 @@ def part_one(day)
   increases
 end
 
-def part_two(day)
-  data = Reader.readlines(day).map(&:to_i)
+def part_two(year, day)
+  data = Reader.readlines(year, day).map(&:to_i)
   previous = data[0..2].sum
   increases = 0
 

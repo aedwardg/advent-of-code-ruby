@@ -1,11 +1,11 @@
 module AOC
   class Reader
-    def self.read(day)
-      File.read("./inputs/#{day}.txt")
+    def self.read(year, day)
+      File.read("./#{year}/inputs/#{day}.txt")
     end
 
-    def self.readlines(day, chomp: true)
-      File.readlines("./inputs/#{day}.txt", chomp: chomp)
+    def self.readlines(year, day, chomp: true)
+      File.readlines("./#{year}/inputs/#{day}.txt", chomp: chomp)
     end
   end
 end
