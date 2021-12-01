@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+year = ARGV[0]
+day = ARGV[1]
+
+require "./#{year}/#{day}.rb"
+
+puts part_one(day)
+puts part_two(day)
