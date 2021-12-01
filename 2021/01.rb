@@ -1,4 +1,4 @@
-require_relative '../reader'
+require_relative '../utils/reader'
 
 include AOC
 
