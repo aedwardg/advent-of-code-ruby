@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'benchmark'
+
+year = ARGV[0]
+day = ARGV[1]
+
+require "./#{year}/#{day}.rb"
+
+Benchmark.bm do |x|
+  x.report { puts part_one(year, day) }
+  x.report { puts part_two(year, day) }
+end
