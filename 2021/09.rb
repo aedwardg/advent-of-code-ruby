@@ -14,10 +14,9 @@ def part_two(year, day)
   basins = []
   lows.each_key do |low|
     basin = find_basin_size(heights, low)
-
     basins << basin 
   end
-
+  
   basins.sort_by(&:length)[-3..-1].map(&:length).reduce(:*)
 end
 
