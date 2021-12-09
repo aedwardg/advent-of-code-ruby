@@ -18,7 +18,7 @@ def part_two(year, day)
     basins << basin 
   end
 
-  basins = basins.sort_by(&:length)[-3..-1].map(&:length).reduce(:*)
+  basins.sort_by(&:length)[-3..-1].map(&:length).reduce(:*)
 end
 
 def parse_data(year, day)
